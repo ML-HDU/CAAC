@@ -37,15 +37,14 @@ python main.py --config=configs/xxx.yaml --phase test --image_only
 
 ## Pretrained Models
 
-Get the pretrained models from [GoogleDrive](https://drive.google.com/drive/folders/1WkxqNpBMjTUAW5M1E6OdkXw_PDFfAy6Y?usp=sharing). Performances of the pretrained models are summaried as follows:
+Get the pretrained models from [GoogleDrive](https://drive.google.com/drive/folders/1WkxqNpBMjTUAW5M1E6OdkXw_PDFfAy6Y?usp=sharing). Performances of some pretrained models are summaried as follows, ACC / NED follow the percentage format and decimal format, respectively.
 
-| Model             | Scene         | Web           | log (Scene) | log (Web) | SLPR          | SLPR-P        | log (SLPR) | log (SLPR-P) |
-|-------------------|---------------|---------------|-------------|-----------|---------------|---------------|------------|--------------|
-| ResNet-45-CAAC    | 65.11 \/ 0.815 | 63.40 / 0.801 |             |           | 92.85 / 0.977 | 86.60 / 0.945 |            |              |
-| ResNet-45-no-CAAC | 64.07 / 0.809 | 62.86 / 0.799 |             |           | 92.85 / 0.976 | 88.50 / 0.954 |            |              |
-| Swin-S-CAAC       | 74.91 / 0.88. | 64.74 / 0.813 |             |           |               |               |            |              |
-| Swin-S-no-CAAC    | 72.93 / 0.873 | 62.64 / 0.800 |             |           |               |               |            |              |
-
+ **Model**         | **Scene**     | **Web**       | **log (Scene)** | **log (Web)** | **SLPR**      | **SLPR-P**    | **log (SLPR)** | **log (SLPR-P)** 
+:-----------------:|:-------------:|:-------------:|:---------------:|:-------------:|:-------------:|:-------------:|:--------------:|:----------------:
+ ResNet-45-CAAC    | 65.11 / 0.815 | 63.40 / 0.801 |                 |               | 92.85 / 0.977 | 86.60 / 0.945 |                |                  
+ ResNet-45-no-CAAC | 64.07 / 0.809 | 62.86 / 0.799 |                 |               | 92.85 / 0.976 | 88.50 / 0.954 |                |                  
+ Swin-S-CAAC       | 74.91 / 0.88. | 64.74 / 0.813 |                 |               |       -       |       -       |                |                  
+ Swin-S-no-CAAC    | 72.93 / 0.873 | 62.64 / 0.800 |                 |               |       -       |       -       |                |                  
 
 
 ## Acknowledgements
