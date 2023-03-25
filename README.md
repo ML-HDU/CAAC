@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 - Download ***[Scene](https://github.com/FudanVI/benchmarking-chinese-text-recognition)*** and ***[Web](https://github.com/FudanVI/benchmarking-chinese-text-recognition)*** lmdb dataset for training and evaluation.
 - For cross-domain generalization analysis, the commonly used English datasets can be downloaded in [IIIT5K](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html) (IIIT), [Street View Text](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset) (SVT), [ICDAR 2015](https://rrc.cvc.uab.es/?ch=4) (IC15 1811), [Street View Text Perspective](https://mmocr.readthedocs.io/en/v0.6.1/datasets/recog.html#svtp) (SVTP), and [WordArt](https://github.com/xdxie/WordArt).
-- The new collected SLPR and SLPR-P dataset consists of 6,922 artistic text images with 5,131 training images and 1,791 testing images. The dataset is available at [Google Drive]().
+- The new collected SLPR and SLPR-P dataset consists of 6,922 artistic text images with 5,131 training images and 1,791 testing images. The dataset is available at [Google Drive](https://drive.google.com/drive/folders/1l7OvlBagMnhwcmEeqbRGsG5zrJk40dw1?usp=sharing).
 
 ## Training and Evaluation
 
@@ -35,12 +35,17 @@ python main.py --config=configs/xxx.yaml
 python main.py --config=configs/xxx.yaml --phase test --image_only
 ```
 
-Additional flags:
+## Pretrained Models
 
-- ``` --test_root /path/to/dataset ``` set the path of evaluation dataset
-- ``` --image_only ``` disable dumping visualization of attention masks
-- ``` --checkpoint /path/to/checkpoint ``` set the path of pre-trained model
-- 
+Get the pretrained models from [GoogleDrive](https://drive.google.com/drive/folders/1WkxqNpBMjTUAW5M1E6OdkXw_PDFfAy6Y?usp=sharing). Performances of the pretrained models are summaried as follows:
+
+| Model             | Scene         | Web           | log (Scene) | log (Web) | SLPR          | SLPR-P        | log (SLPR) | log (SLPR-P) |
+|-------------------|---------------|---------------|-------------|-----------|---------------|---------------|------------|--------------|
+| ResNet-45-CAAC    | 65.11 / 0.815 | 63.40 / 0.801 |             |           | 92.85 / 0.977 | 86.60 / 0.945 |            |              |
+| ResNet-45-no-CAAC | 64.07 / 0.809 | 62.86 / 0.799 |             |           | 92.85 / 0.976 | 88.50 / 0.954 |            |              |
+| Swin-S-CAAC       | 74.91 / 0.88. | 64.74 / 0.813 |             |           |               |               |            |              |
+| Swin-S-no-CAAC    | 72.93 / 0.873 | 62.64 / 0.800 |             |           |               |               |            |              |
+
 
 
 ## Acknowledgements
