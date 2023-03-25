@@ -1,7 +1,7 @@
 global:
   name: train-CAAC
   phase: train
-  workdir: workdir
+  workdir: workdir_Chinese
   seed: 42
   contrastive: True
   projection_type: 'projection_free'    # wordArt   projection_free    SimCLR   BiLSTM
@@ -13,18 +13,15 @@ dataset:
   charset_path: data/benchmark_ch_7934.txt
 
   train: {
-    roots: [''],
-    batch_size: 1
-  }
-
-  validation: {
-    roots: [''],
+    roots: ['data/training/Scene'],
     batch_size: 384
   }
-
+  
+  # /path/to/evaluation dataset for phase: train
+  # /path/to/test dataset for phase: test, set the batch_size 1
   test: {
-    roots: [''],
-    batch_size: 256
+    roots: ['data/evaluating/Scene'],
+    batch_size: 384
   }
   image_only: True
 
@@ -40,14 +37,14 @@ dataset:
   one_hot_y: False
 
   data_loader: {
-    num_workers: 12,
+    num_workers: 16,
     pin_memory: True,
   }
 
 training:
   epochs: 120
   pct_start: 0.025
-  show_iters: 1
+  show_iters: 1325
   eval_iters: 1325
   start_eval_iters: 10000
   save_iters: 40000
