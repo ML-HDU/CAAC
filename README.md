@@ -47,6 +47,15 @@ Get the pretrained models from [GoogleDrive](https://drive.google.com/drive/fold
  Swin-S-no-CAAC    | 72.93 / 0.873 | 62.64 / 0.800 | [Link](./logs/training/Swin-S-Scene-no-CAAC.txt)     | [Link](./logs/training/Swin-S-Web-no-CAAC.txt)              |       -       |       -       |     -          |    -              
 
 
+## Evaluation logs
+
+Please click the hyperlinks to see the detailed experimental results, following the format of  (*[gt]* *[pt]*)
+
+- ResNet-45-Scene-CAAC: [Link](./logs/evaluation/ResNet-45-Scene-CAAC.txt) 
+- Swin-S-Scene-CAAC: [Link](./logs/evaluation/Swin-S-Scene-CAAC.txt)
+- ResNet-45-Web-CAAC: [Link](./logs/evaluation/ResNet-45-Web-CAAC.txt)
+- Swin-S-Web-CAAC: [Link](./logs/evaluation/Swin-S-Web-CAAC.txt)
+
 ## Acknowledgements
 
 This implementation is based on the repository [ABINet](https://github.com/FangShancheng/ABINet), [SupContrast](https://github.com/HobbitLong/SupContrast), [FudanVI
