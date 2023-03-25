@@ -1,0 +1,488 @@
+You have chosen to seed training. This will slow down your training!
+Construct dataset.
+112471 training items found.
+14059 valid items found.
+Construct model.
+Model(
+  (backbone): ResNet(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU(inplace=True)
+    (layer1): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(32, 32, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (2): BasicBlock(
+        (conv1): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer2): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(32, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(32, 64, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (2): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (3): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer3): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (2): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (3): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (4): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (5): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer4): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (2): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (3): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (4): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (5): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer5): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (2): BasicBlock(
+        (conv1): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (decoder): PositionAttention(
+    (k_encoder): Sequential(
+      (0): Sequential(
+        (0): Conv2d(512, 128, kernel_size=(3, 3), stride=(1, 2), padding=(1, 1))
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+      )
+      (1): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+      )
+      (2): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+      )
+    )
+    (k_decoder): Sequential(
+      (0): Sequential(
+        (0): Upsample(scale_factor=2.0, mode=nearest)
+        (1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+      (1): Sequential(
+        (0): Upsample(scale_factor=2.0, mode=nearest)
+        (1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+      (2): Sequential(
+        (0): Upsample(size=(4, 32), mode=nearest)
+        (1): Conv2d(128, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): ReLU(inplace=True)
+      )
+    )
+    (pos_encoder): PositionalEncoding(
+      (dropout): Dropout(p=0, inplace=False)
+    )
+    (project): Linear(in_features=512, out_features=512, bias=True)
+  )
+  (cls): Linear(in_features=512, out_features=7935, bias=True)
+)
+The parameters size of model is 19.101023 MB
+Construct learner.
+Use 4 GPUs.
+Start training.
+epoch 1 iter 292: loss = 12.2135, smooth loss = 12.1234, ce loss = 5.2167, contrastive loss = 1.7801, lr = 0.00022400000000000002
+epoch 2 iter 584: loss = 11.4655, smooth loss = 11.4644, ce loss = 4.8576, contrastive loss = 1.7502, lr = 0.0006079999999999999
+epoch 3 iter 876: loss = 9.0437, smooth loss = 9.2396, ce loss = 3.6922, contrastive loss = 1.6594, lr = 0.0008
+epoch 4 iter 1168: loss = 7.9285, smooth loss = 7.8088, ce loss = 3.1579, contrastive loss = 1.6126, lr = 0.0007998558116451099
+epoch 5 iter 1460: loss = 7.0900, smooth loss = 7.1460, ce loss = 2.7656, contrastive loss = 1.5588, lr = 0.0007994233505322638
+epoch 6 iter 1752: loss = 6.2836, smooth loss = 6.7359, ce loss = 2.3766, contrastive loss = 1.5303, lr = 0.000798702928441991
+epoch 7 iter 2044: loss = 6.2229, smooth loss = 6.4391, ce loss = 2.3292, contrastive loss = 1.5645, lr = 0.000797695064758749
+epoch 8 iter 2336: loss = 6.0058, smooth loss = 6.2249, ce loss = 2.2499, contrastive loss = 1.5060, lr = 0.0007964004860964767
+epoch 9 iter 2628: loss = 6.0655, smooth loss = 6.0336, ce loss = 2.2608, contrastive loss = 1.5438, lr = 0.0007948201257747449
+epoch 10 iter 2920: loss = 5.8407, smooth loss = 5.9192, ce loss = 2.1673, contrastive loss = 1.5062, lr = 0.000792955123145886
+epoch 11 iter 3212: loss = 5.6625, smooth loss = 5.8236, ce loss = 2.0683, contrastive loss = 1.5258, lr = 0.0007908068227735828
+epoch 12 iter 3504: loss = 5.2884, smooth loss = 5.6687, ce loss = 1.8973, contrastive loss = 1.4938, lr = 0.000788376773463513
+epoch 13 iter 3796: loss = 5.3033, smooth loss = 5.5875, ce loss = 1.9216, contrastive loss = 1.4601, lr = 0.0007856667271467458
+epoch 14 iter 4088: loss = 5.3713, smooth loss = 5.5043, ce loss = 1.9475, contrastive loss = 1.4763, lr = 0.0007826786376166968
+epoch 15 iter 4380: loss = 5.2406, smooth loss = 5.4395, ce loss = 1.8867, contrastive loss = 1.4672, lr = 0.0007794146591205511
+epoch 16 iter 4672: loss = 5.1096, smooth loss = 5.3325, ce loss = 1.8240, contrastive loss = 1.4616, lr = 0.0007758771448061701
+epoch 17 iter 4964: loss = 5.2074, smooth loss = 5.2711, ce loss = 1.8741, contrastive loss = 1.4592, lr = 0.0007720686450256023
+epoch 18 iter 5256: loss = 5.1192, smooth loss = 5.2167, ce loss = 1.8239, contrastive loss = 1.4715, lr = 0.0007679919054964199
+epoch 19 iter 5548: loss = 4.9621, smooth loss = 5.1535, ce loss = 1.7692, contrastive loss = 1.4237, lr = 0.0007636498653222099
+epoch 20 iter 5840: loss = 4.6559, smooth loss = 5.1006, ce loss = 1.6135, contrastive loss = 1.4290, lr = 0.0007590456548736415
+Save model train-seed-42-FuDan-Scene-32-256-bs-384-lr-0.0008-d_model-512-epoch-120-decay-cos-grad-clip-20-AdamW-wd-0.15-PA-decoder-max-len-40-sup_con-1.0-ce-2.0-temperature-0.15-warm_up-0.025_20_5840
+epoch 21 iter 6132: loss = 4.8888, smooth loss = 5.0486, ce loss = 1.7121, contrastive loss = 1.4646, lr = 0.0007541825935316429
+epoch 22 iter 6424: loss = 4.5656, smooth loss = 4.9870, ce loss = 1.5772, contrastive loss = 1.4113, lr = 0.0007490641872943116
+epoch 23 iter 6716: loss = 4.5253, smooth loss = 4.9665, ce loss = 1.5640, contrastive loss = 1.3973, lr = 0.0007436941262492827
+epoch 24 iter 7008: loss = 4.6917, smooth loss = 4.9132, ce loss = 1.6198, contrastive loss = 1.4521, lr = 0.0007380762819133811
+epoch 25 iter 7300: loss = 4.5769, smooth loss = 4.8830, ce loss = 1.5788, contrastive loss = 1.4193, lr = 0.0007322147044414715
+epoch 26 iter 7592: loss = 4.7529, smooth loss = 4.8330, ce loss = 1.6593, contrastive loss = 1.4342, lr = 0.0007261136197065211
+epoch 27 iter 7884: loss = 4.7768, smooth loss = 4.8048, ce loss = 1.6626, contrastive loss = 1.4515, lr = 0.0007197774262529791
+epoch 28 iter 8176: loss = 4.6077, smooth loss = 4.7888, ce loss = 1.5925, contrastive loss = 1.4227, lr = 0.0007132106921256691
+epoch 29 iter 8468: loss = 4.6772, smooth loss = 4.6980, ce loss = 1.6266, contrastive loss = 1.4239, lr = 0.0007064181515764822
+epoch 30 iter 8760: loss = 4.2257, smooth loss = 4.6844, ce loss = 1.3998, contrastive loss = 1.4260, lr = 0.0006994047016512434
+epoch 31 iter 9052: loss = 4.4211, smooth loss = 4.6446, ce loss = 1.4997, contrastive loss = 1.4218, lr = 0.0006921753986592118
+epoch 32 iter 9344: loss = 4.4495, smooth loss = 4.6260, ce loss = 1.5070, contrastive loss = 1.4356, lr = 0.0006847354545277624
+epoch 33 iter 9636: loss = 4.4104, smooth loss = 4.6101, ce loss = 1.5058, contrastive loss = 1.3988, lr = 0.0006770902330448742
+epoch 34 iter 9928: loss = 4.6859, smooth loss = 4.5875, ce loss = 1.6319, contrastive loss = 1.4221, lr = 0.0006692452459921362
+epoch 35 iter 10220: loss = 4.2034, smooth loss = 4.5632, ce loss = 1.4094, contrastive loss = 1.3845, lr = 0.000661206149171058
+epoch 36 iter 10512: loss = 4.6010, smooth loss = 4.5267, ce loss = 1.5958, contrastive loss = 1.4094, lr = 0.0006529787383255499
+epoch 37 iter 10804: loss = 4.4348, smooth loss = 4.5197, ce loss = 1.5137, contrastive loss = 1.4075, lr = 0.0006445689449635119
+epoch 38 iter 11096: loss = 4.4441, smooth loss = 4.4178, ce loss = 1.5166, contrastive loss = 1.4109, lr = 0.0006359828320805452
+epoch 39 iter 11388: loss = 4.0031, smooth loss = 4.4124, ce loss = 1.3165, contrastive loss = 1.3701, lr = 0.0006272265897888675
+epoch 40 iter 11680: loss = 4.8209, smooth loss = 4.3981, ce loss = 1.6879, contrastive loss = 1.4452, lr = 0.0006183065308545855
+Save model train-seed-42-FuDan-Scene-32-256-bs-384-lr-0.0008-d_model-512-epoch-120-decay-cos-grad-clip-20-AdamW-wd-0.15-PA-decoder-max-len-40-sup_con-1.0-ce-2.0-temperature-0.15-warm_up-0.025_40_11680
+epoch 41 iter 11972: loss = 4.1837, smooth loss = 4.4066, ce loss = 1.3927, contrastive loss = 1.3983, lr = 0.0006092290861465388
+epoch 42 iter 12264: loss = 4.3242, smooth loss = 4.3733, ce loss = 1.4527, contrastive loss = 1.4187, lr = 0.0006000008
+epoch 43 iter 12556: loss = 4.2585, smooth loss = 4.3203, ce loss = 1.4217, contrastive loss = 1.4152, lr = 0.0005906283254985711
+epoch 44 iter 12848: loss = 4.1407, smooth loss = 4.2758, ce loss = 1.3672, contrastive loss = 1.4064, lr = 0.0005811184196776785
+epoch 45 iter 13140: loss = 4.0590, smooth loss = 4.3020, ce loss = 1.3371, contrastive loss = 1.3847, lr = 0.0005714779386531235
+epoch 46 iter 13432: loss = 4.0706, smooth loss = 4.2785, ce loss = 1.3525, contrastive loss = 1.3655, lr = 0.0005617138326782039
+epoch 47 iter 13724: loss = 4.1104, smooth loss = 4.2365, ce loss = 1.3649, contrastive loss = 1.3806, lr = 0.0005518331411329647
+epoch 48 iter 14016: loss = 4.1895, smooth loss = 4.2408, ce loss = 1.3874, contrastive loss = 1.4147, lr = 0.000541842987449195
+epoch 49 iter 14308: loss = 3.9864, smooth loss = 4.1877, ce loss = 1.3078, contrastive loss = 1.3707, lr = 0.0005317505739748281
+epoch 50 iter 14600: loss = 4.1616, smooth loss = 4.1630, ce loss = 1.3692, contrastive loss = 1.4232, lr = 0.0005215631767814466
+epoch 51 iter 14892: loss = 3.8683, smooth loss = 4.1833, ce loss = 1.2463, contrastive loss = 1.3757, lr = 0.0005112881404186389
+epoch 52 iter 15184: loss = 3.9216, smooth loss = 4.1673, ce loss = 1.2848, contrastive loss = 1.3519, lr = 0.0005009328726189833
+epoch 53 iter 15476: loss = 4.5052, smooth loss = 4.1523, ce loss = 1.5360, contrastive loss = 1.4332, lr = 0.0004905048389574851
+epoch 54 iter 15768: loss = 4.1038, smooth loss = 4.0921, ce loss = 1.3568, contrastive loss = 1.3901, lr = 0.00048001155746930777
+epoch 55 iter 16060: loss = 3.7433, smooth loss = 4.0968, ce loss = 1.2055, contrastive loss = 1.3324, lr = 0.00046946059322968797
+epoch 56 iter 16352: loss = 4.0691, smooth loss = 4.0645, ce loss = 1.3464, contrastive loss = 1.3762, lr = 0.00045885955289993313
+epoch 57 iter 16644: loss = 3.6707, smooth loss = 3.9968, ce loss = 1.1577, contrastive loss = 1.3552, lr = 0.0004482160792434408
+epoch 58 iter 16936: loss = 4.0397, smooth loss = 3.9822, ce loss = 1.3249, contrastive loss = 1.3899, lr = 0.0004375378456156887
+epoch 59 iter 17228: loss = 3.7191, smooth loss = 3.9757, ce loss = 1.1852, contrastive loss = 1.3488, lr = 0.00042683255043216993
+epoch 60 iter 17520: loss = 4.2482, smooth loss = 3.9810, ce loss = 1.4213, contrastive loss = 1.4055, lr = 0.0004161079116182619
+Save model train-seed-42-FuDan-Scene-32-256-bs-384-lr-0.0008-d_model-512-epoch-120-decay-cos-grad-clip-20-AdamW-wd-0.15-PA-decoder-max-len-40-sup_con-1.0-ce-2.0-temperature-0.15-warm_up-0.025_60_17520
+epoch 61 iter 17812: loss = 3.7837, smooth loss = 3.9221, ce loss = 1.2062, contrastive loss = 1.3713, lr = 0.0004053716610450289
+epoch 62 iter 18104: loss = 3.9202, smooth loss = 3.9237, ce loss = 1.2519, contrastive loss = 1.4163, lr = 0.0003946315389549712
+epoch 63 iter 18396: loss = 3.7188, smooth loss = 3.8816, ce loss = 1.1800, contrastive loss = 1.3588, lr = 0.00038389528838173823
+epoch 64 iter 18688: loss = 3.7883, smooth loss = 3.8711, ce loss = 1.2022, contrastive loss = 1.3839, lr = 0.00037317064956783006
+epoch 65 iter 18980: loss = 3.6554, smooth loss = 3.9029, ce loss = 1.1569, contrastive loss = 1.3417, lr = 0.0003624653543843114
+epoch 66 iter 19272: loss = 4.1770, smooth loss = 3.8116, ce loss = 1.3906, contrastive loss = 1.3958, lr = 0.00035178712075655926
+epoch 67 iter 19564: loss = 4.0179, smooth loss = 3.8265, ce loss = 1.3297, contrastive loss = 1.3585, lr = 0.0003411436471000669
+epoch 68 iter 19856: loss = 3.2794, smooth loss = 3.7715, ce loss = 0.9769, contrastive loss = 1.3256, lr = 0.0003305426067703122
+epoch 69 iter 20148: loss = 3.8872, smooth loss = 3.7257, ce loss = 1.2558, contrastive loss = 1.3756, lr = 0.00031999164253069233
+average data time = 0.0287s, average running time = 0.7337s
+epoch 69 iter 20148: eval loss = 1.3007,  ccr = 0.7286,  cwr = 0.6005,  ted = 17773.0000,  ned = 3361.2371,  ted/w = 1.2642, 
+Better model found at epoch 69, iter 20148 with accuracy value: 0.6005.
+epoch 70 iter 20440: loss = 3.8308, smooth loss = 3.7217, ce loss = 1.2218, contrastive loss = 1.3871, lr = 0.0003094983610425151
+average data time = 0.0286s, average running time = 0.7354s
+epoch 70 iter 20440: eval loss = 1.3319,  ccr = 0.7310,  cwr = 0.6009,  ted = 17221.0000,  ned = 3308.6932,  ted/w = 1.2249, 
+Better model found at epoch 70, iter 20440 with accuracy value: 0.6009.
+epoch 71 iter 20732: loss = 3.6833, smooth loss = 3.7466, ce loss = 1.1562, contrastive loss = 1.3709, lr = 0.0002990703273810167
+average data time = 0.0286s, average running time = 0.7370s
+epoch 71 iter 20732: eval loss = 1.3082,  ccr = 0.7312,  cwr = 0.5977,  ted = 17550.0000,  ned = 3435.4213,  ted/w = 1.2483, 
+epoch 72 iter 21024: loss = 3.8138, smooth loss = 3.6862, ce loss = 1.2237, contrastive loss = 1.3663, lr = 0.0002887150595813612
+average data time = 0.0286s, average running time = 0.7386s
+epoch 72 iter 21024: eval loss = 1.3028,  ccr = 0.7341,  cwr = 0.6045,  ted = 16832.0000,  ned = 3250.8074,  ted/w = 1.1972, 
+Better model found at epoch 72, iter 21024 with accuracy value: 0.6045.
+epoch 73 iter 21316: loss = 3.7984, smooth loss = 3.6604, ce loss = 1.2083, contrastive loss = 1.3818, lr = 0.0002784400232185534
+average data time = 0.0285s, average running time = 0.7402s
+epoch 73 iter 21316: eval loss = 1.2997,  ccr = 0.7339,  cwr = 0.6074,  ted = 16864.0000,  ned = 3223.4359,  ted/w = 1.1995, 
+Better model found at epoch 73, iter 21316 with accuracy value: 0.6074.
+epoch 74 iter 21608: loss = 3.3646, smooth loss = 3.6410, ce loss = 1.0090, contrastive loss = 1.3466, lr = 0.0002682526260251721
+average data time = 0.0285s, average running time = 0.7418s
+epoch 74 iter 21608: eval loss = 1.3288,  ccr = 0.7318,  cwr = 0.6015,  ted = 17280.0000,  ned = 3328.4581,  ted/w = 1.2291, 
+epoch 75 iter 21900: loss = 3.9220, smooth loss = 3.5979, ce loss = 1.2660, contrastive loss = 1.3901, lr = 0.00025816021255080504
+average data time = 0.0285s, average running time = 0.7432s
+epoch 75 iter 21900: eval loss = 1.3172,  ccr = 0.7301,  cwr = 0.6027,  ted = 17067.0000,  ned = 3286.6150,  ted/w = 1.2140, 
+epoch 76 iter 22192: loss = 3.0499, smooth loss = 3.5961, ce loss = 0.8653, contrastive loss = 1.3192, lr = 0.00024817005886703536
+average data time = 0.0285s, average running time = 0.7445s
+epoch 76 iter 22192: eval loss = 1.3223,  ccr = 0.7363,  cwr = 0.6080,  ted = 16872.0000,  ned = 3270.8878,  ted/w = 1.2001, 
+Better model found at epoch 76, iter 22192 with accuracy value: 0.6080.
+epoch 77 iter 22484: loss = 3.6547, smooth loss = 3.6020, ce loss = 1.1461, contrastive loss = 1.3625, lr = 0.0002382893673217962
+average data time = 0.0284s, average running time = 0.7460s
+epoch 77 iter 22484: eval loss = 1.2975,  ccr = 0.7351,  cwr = 0.6064,  ted = 16992.0000,  ned = 3228.1445,  ted/w = 1.2086, 
+epoch 78 iter 22776: loss = 3.6501, smooth loss = 3.5733, ce loss = 1.1379, contrastive loss = 1.3743, lr = 0.00022852526134687652
+average data time = 0.0284s, average running time = 0.7473s
+epoch 78 iter 22776: eval loss = 1.3057,  ccr = 0.7336,  cwr = 0.6026,  ted = 16933.0000,  ned = 3275.2696,  ted/w = 1.2044, 
+epoch 79 iter 23068: loss = 3.4414, smooth loss = 3.5014, ce loss = 1.0478, contrastive loss = 1.3458, lr = 0.00021888478032232176
+average data time = 0.0284s, average running time = 0.7487s
+epoch 79 iter 23068: eval loss = 1.3106,  ccr = 0.7362,  cwr = 0.6073,  ted = 16900.0000,  ned = 3302.1219,  ted/w = 1.2021, 
+epoch 80 iter 23360: loss = 3.4499, smooth loss = 3.5104, ce loss = 1.0490, contrastive loss = 1.3519, lr = 0.0002093748745014289
+average data time = 0.0284s, average running time = 0.7499s
+epoch 80 iter 23360: eval loss = 1.3117,  ccr = 0.7379,  cwr = 0.6122,  ted = 16695.0000,  ned = 3203.7437,  ted/w = 1.1875, 
+Better model found at epoch 80, iter 23360 with accuracy value: 0.6122.
+Save model train-seed-42-FuDan-Scene-32-256-bs-384-lr-0.0008-d_model-512-epoch-120-decay-cos-grad-clip-20-AdamW-wd-0.15-PA-decoder-max-len-40-sup_con-1.0-ce-2.0-temperature-0.15-warm_up-0.025_80_23360
+epoch 81 iter 23652: loss = 3.5078, smooth loss = 3.4810, ce loss = 1.0705, contrastive loss = 1.3667, lr = 0.0002000024000000001
+average data time = 0.0284s, average running time = 0.7513s
+epoch 81 iter 23652: eval loss = 1.3231,  ccr = 0.7343,  cwr = 0.6047,  ted = 17084.0000,  ned = 3300.3469,  ted/w = 1.2152, 
+epoch 82 iter 23944: loss = 3.2444, smooth loss = 3.4862, ce loss = 0.9639, contrastive loss = 1.3167, lr = 0.00019077411385346127
+average data time = 0.0283s, average running time = 0.7525s
+epoch 82 iter 23944: eval loss = 1.3007,  ccr = 0.7379,  cwr = 0.6091,  ted = 16761.0000,  ned = 3213.5007,  ted/w = 1.1922, 
+epoch 83 iter 24236: loss = 3.5303, smooth loss = 3.4378, ce loss = 1.0831, contrastive loss = 1.3642, lr = 0.00018169666914541447
+average data time = 0.0283s, average running time = 0.7537s
+epoch 83 iter 24236: eval loss = 1.3093,  ccr = 0.7392,  cwr = 0.6114,  ted = 16372.0000,  ned = 3176.1335,  ted/w = 1.1645, 
+epoch 84 iter 24528: loss = 3.5842, smooth loss = 3.4158, ce loss = 1.1004, contrastive loss = 1.3835, lr = 0.0001727766102111325
+average data time = 0.0283s, average running time = 0.7548s
+epoch 84 iter 24528: eval loss = 1.3119,  ccr = 0.7376,  cwr = 0.6135,  ted = 16420.0000,  ned = 3140.6947,  ted/w = 1.1679, 
+Better model found at epoch 84, iter 24528 with accuracy value: 0.6135.
+epoch 85 iter 24820: loss = 3.1461, smooth loss = 3.3689, ce loss = 0.9196, contrastive loss = 1.3069, lr = 0.000164020367919455
+average data time = 0.0284s, average running time = 0.7559s
+epoch 85 iter 24820: eval loss = 1.3172,  ccr = 0.7403,  cwr = 0.6173,  ted = 16327.0000,  ned = 3139.3515,  ted/w = 1.1613, 
+Better model found at epoch 85, iter 24820 with accuracy value: 0.6173.
+epoch 86 iter 25112: loss = 3.3443, smooth loss = 3.4037, ce loss = 1.0011, contrastive loss = 1.3420, lr = 0.00015543425503648805
+average data time = 0.0283s, average running time = 0.7570s
+epoch 86 iter 25112: eval loss = 1.3181,  ccr = 0.7400,  cwr = 0.6110,  ted = 16448.0000,  ned = 3198.8539,  ted/w = 1.1699, 
+epoch 87 iter 25404: loss = 3.0666, smooth loss = 3.3546, ce loss = 0.8908, contrastive loss = 1.2850, lr = 0.0001470244616744501
+average data time = 0.0283s, average running time = 0.7581s
+epoch 87 iter 25404: eval loss = 1.3231,  ccr = 0.7395,  cwr = 0.6133,  ted = 16308.0000,  ned = 3173.3434,  ted/w = 1.1600, 
+epoch 88 iter 25696: loss = 3.6449, smooth loss = 3.3513, ce loss = 1.1348, contrastive loss = 1.3753, lr = 0.00013879705082894204
+average data time = 0.0283s, average running time = 0.7592s
+epoch 88 iter 25696: eval loss = 1.3210,  ccr = 0.7415,  cwr = 0.6169,  ted = 16169.0000,  ned = 3131.9065,  ted/w = 1.1501, 
+epoch 89 iter 25988: loss = 3.3038, smooth loss = 3.3305, ce loss = 0.9886, contrastive loss = 1.3266, lr = 0.00013075795400786374
+average data time = 0.0282s, average running time = 0.7602s
+epoch 89 iter 25988: eval loss = 1.3192,  ccr = 0.7423,  cwr = 0.6181,  ted = 16353.0000,  ned = 3163.7651,  ted/w = 1.1632, 
+Better model found at epoch 89, iter 25988 with accuracy value: 0.6181.
+epoch 90 iter 26280: loss = 3.2367, smooth loss = 3.2780, ce loss = 0.9576, contrastive loss = 1.3214, lr = 0.00012291296695512586
+average data time = 0.0282s, average running time = 0.7613s
+epoch 90 iter 26280: eval loss = 1.3146,  ccr = 0.7405,  cwr = 0.6159,  ted = 16332.0000,  ned = 3146.0109,  ted/w = 1.1617, 
+epoch 91 iter 26572: loss = 3.2315, smooth loss = 3.2615, ce loss = 0.9495, contrastive loss = 1.3324, lr = 0.00011526774547223771
+average data time = 0.0282s, average running time = 0.7622s
+epoch 91 iter 26572: eval loss = 1.3328,  ccr = 0.7424,  cwr = 0.6155,  ted = 16177.0000,  ned = 3125.1712,  ted/w = 1.1507, 
+epoch 92 iter 26864: loss = 3.4280, smooth loss = 3.2446, ce loss = 1.0362, contrastive loss = 1.3557, lr = 0.00010782780134078822
+average data time = 0.0282s, average running time = 0.7632s
+epoch 92 iter 26864: eval loss = 1.3232,  ccr = 0.7435,  cwr = 0.6196,  ted = 16190.0000,  ned = 3117.3942,  ted/w = 1.1516, 
+Better model found at epoch 92, iter 26864 with accuracy value: 0.6196.
+epoch 93 iter 27156: loss = 3.0004, smooth loss = 3.2361, ce loss = 0.8448, contrastive loss = 1.3108, lr = 0.00010059849834875659
+average data time = 0.0282s, average running time = 0.7642s
+epoch 93 iter 27156: eval loss = 1.3090,  ccr = 0.7454,  cwr = 0.6243,  ted = 15889.0000,  ned = 3070.9732,  ted/w = 1.1302, 
+Better model found at epoch 93, iter 27156 with accuracy value: 0.6243.
+epoch 94 iter 27448: loss = 3.0855, smooth loss = 3.2051, ce loss = 0.8817, contrastive loss = 1.3221, lr = 9.358504842351783e-05
+average data time = 0.0281s, average running time = 0.7652s
+epoch 94 iter 27448: eval loss = 1.3354,  ccr = 0.7421,  cwr = 0.6232,  ted = 15979.0000,  ned = 3073.5810,  ted/w = 1.1366, 
+epoch 95 iter 27740: loss = 2.8678, smooth loss = 3.2136, ce loss = 0.7914, contrastive loss = 1.2850, lr = 8.679250787433099e-05
+average data time = 0.0281s, average running time = 0.7661s
+epoch 95 iter 27740: eval loss = 1.3298,  ccr = 0.7434,  cwr = 0.6228,  ted = 16029.0000,  ned = 3091.1890,  ted/w = 1.1401, 
+epoch 96 iter 28032: loss = 2.9825, smooth loss = 3.1884, ce loss = 0.8454, contrastive loss = 1.2918, lr = 8.022577374702106e-05
+average data time = 0.0281s, average running time = 0.7670s
+epoch 96 iter 28032: eval loss = 1.3432,  ccr = 0.7435,  cwr = 0.6230,  ted = 16123.0000,  ned = 3108.7471,  ted/w = 1.1468, 
+epoch 97 iter 28324: loss = 3.2368, smooth loss = 3.1910, ce loss = 0.9543, contrastive loss = 1.3282, lr = 7.388958029347893e-05
+average data time = 0.0281s, average running time = 0.7678s
+epoch 97 iter 28324: eval loss = 1.3362,  ccr = 0.7434,  cwr = 0.6246,  ted = 15968.0000,  ned = 3085.5757,  ted/w = 1.1358, 
+Better model found at epoch 97, iter 28324 with accuracy value: 0.6246.
+epoch 98 iter 28616: loss = 3.0737, smooth loss = 3.1481, ce loss = 0.8871, contrastive loss = 1.2995, lr = 6.778849555852853e-05
+average data time = 0.0281s, average running time = 0.7686s
+epoch 98 iter 28616: eval loss = 1.3301,  ccr = 0.7443,  cwr = 0.6240,  ted = 15957.0000,  ned = 3091.6163,  ted/w = 1.1350, 
+epoch 99 iter 28908: loss = 3.1387, smooth loss = 3.1302, ce loss = 0.9075, contrastive loss = 1.3238, lr = 6.192691808661902e-05
+average data time = 0.0280s, average running time = 0.7694s
+epoch 99 iter 28908: eval loss = 1.3411,  ccr = 0.7450,  cwr = 0.6252,  ted = 15841.0000,  ned = 3065.4838,  ted/w = 1.1268, 
+Better model found at epoch 99, iter 28908 with accuracy value: 0.6252.
+epoch 100 iter 29200: loss = 3.1233, smooth loss = 3.1310, ce loss = 0.8942, contrastive loss = 1.3348, lr = 5.630907375071737e-05
+average data time = 0.0280s, average running time = 0.7703s
+epoch 100 iter 29200: eval loss = 1.3357,  ccr = 0.7460,  cwr = 0.6228,  ted = 15997.0000,  ned = 3110.4100,  ted/w = 1.1378, 
+Save model train-seed-42-FuDan-Scene-32-256-bs-384-lr-0.0008-d_model-512-epoch-120-decay-cos-grad-clip-20-AdamW-wd-0.15-PA-decoder-max-len-40-sup_con-1.0-ce-2.0-temperature-0.15-warm_up-0.025_100_29200
+epoch 101 iter 29492: loss = 3.2049, smooth loss = 3.0965, ce loss = 0.9385, contrastive loss = 1.3279, lr = 5.093901270568848e-05
+average data time = 0.0280s, average running time = 0.7711s
+epoch 101 iter 29492: eval loss = 1.3347,  ccr = 0.7466,  cwr = 0.6255,  ted = 15721.0000,  ned = 3042.4533,  ted/w = 1.1182, 
+Better model found at epoch 101, iter 29492 with accuracy value: 0.6255.
+epoch 102 iter 29784: loss = 3.3103, smooth loss = 3.0968, ce loss = 0.9781, contrastive loss = 1.3541, lr = 4.582060646835713e-05
+average data time = 0.0280s, average running time = 0.7719s
+epoch 102 iter 29784: eval loss = 1.3415,  ccr = 0.7448,  cwr = 0.6223,  ted = 15892.0000,  ned = 3068.9527,  ted/w = 1.1304, 
+epoch 103 iter 30076: loss = 3.3070, smooth loss = 3.1141, ce loss = 0.9818, contrastive loss = 1.3433, lr = 4.09575451263587e-05
+average data time = 0.0280s, average running time = 0.7727s
+epoch 103 iter 30076: eval loss = 1.3346,  ccr = 0.7456,  cwr = 0.6233,  ted = 15863.0000,  ned = 3067.4288,  ted/w = 1.1283, 
+epoch 104 iter 30368: loss = 3.0895, smooth loss = 3.0694, ce loss = 0.8860, contrastive loss = 1.3176, lr = 3.635333467779016e-05
+average data time = 0.0280s, average running time = 0.7734s
+epoch 104 iter 30368: eval loss = 1.3447,  ccr = 0.7476,  cwr = 0.6273,  ted = 15713.0000,  ned = 3044.6640,  ted/w = 1.1176, 
+Better model found at epoch 104, iter 30368 with accuracy value: 0.6273.
+epoch 105 iter 30660: loss = 2.9219, smooth loss = 3.0732, ce loss = 0.8238, contrastive loss = 1.2744, lr = 3.201129450358016e-05
+average data time = 0.0280s, average running time = 0.7742s
+epoch 105 iter 30660: eval loss = 1.3460,  ccr = 0.7463,  cwr = 0.6269,  ted = 15696.0000,  ned = 3043.6082,  ted/w = 1.1164, 
+epoch 106 iter 30952: loss = 3.2797, smooth loss = 3.0765, ce loss = 0.9633, contrastive loss = 1.3531, lr = 2.7934554974397916e-05
+average data time = 0.0280s, average running time = 0.7750s
+epoch 106 iter 30952: eval loss = 1.3526,  ccr = 0.7448,  cwr = 0.6242,  ted = 15874.0000,  ned = 3092.9766,  ted/w = 1.1291, 
+epoch 107 iter 31244: loss = 2.7338, smooth loss = 3.0323, ce loss = 0.7344, contrastive loss = 1.2649, lr = 2.412605519382993e-05
+average data time = 0.0280s, average running time = 0.7757s
+epoch 107 iter 31244: eval loss = 1.3552,  ccr = 0.7452,  cwr = 0.6251,  ted = 15803.0000,  ned = 3068.6011,  ted/w = 1.1240, 
+epoch 108 iter 31536: loss = 2.8258, smooth loss = 3.0468, ce loss = 0.7641, contrastive loss = 1.2975, lr = 2.0588540879448922e-05
+average data time = 0.0280s, average running time = 0.7763s
+epoch 108 iter 31536: eval loss = 1.3422,  ccr = 0.7462,  cwr = 0.6266,  ted = 15686.0000,  ned = 3038.1221,  ted/w = 1.1157, 
+epoch 109 iter 31828: loss = 3.2237, smooth loss = 3.0112, ce loss = 0.9447, contrastive loss = 1.3344, lr = 1.7324562383303276e-05
+average data time = 0.0280s, average running time = 0.7770s
+epoch 109 iter 31828: eval loss = 1.3515,  ccr = 0.7458,  cwr = 0.6264,  ted = 15733.0000,  ned = 3047.4920,  ted/w = 1.1191, 
+epoch 110 iter 32120: loss = 2.9802, smooth loss = 3.0418, ce loss = 0.8317, contrastive loss = 1.3167, lr = 1.4336472853254332e-05
+average data time = 0.0280s, average running time = 0.7776s
+epoch 110 iter 32120: eval loss = 1.3500,  ccr = 0.7459,  cwr = 0.6274,  ted = 15760.0000,  ned = 3047.3130,  ted/w = 1.1210, 
+Better model found at epoch 110, iter 32120 with accuracy value: 0.6274.
+epoch 111 iter 32412: loss = 2.7779, smooth loss = 3.0032, ce loss = 0.7451, contrastive loss = 1.2877, lr = 1.1626426536487078e-05
+average data time = 0.0280s, average running time = 0.7783s
+epoch 111 iter 32412: eval loss = 1.3563,  ccr = 0.7459,  cwr = 0.6273,  ted = 15734.0000,  ned = 3045.9485,  ted/w = 1.1191, 
+epoch 112 iter 32704: loss = 3.2110, smooth loss = 3.0293, ce loss = 0.9352, contrastive loss = 1.3406, lr = 9.196377226417202e-06
+average data time = 0.0279s, average running time = 0.7790s
+epoch 112 iter 32704: eval loss = 1.3527,  ccr = 0.7465,  cwr = 0.6254,  ted = 15730.0000,  ned = 3055.8212,  ted/w = 1.1189, 
+epoch 113 iter 32996: loss = 2.8496, smooth loss = 3.0179, ce loss = 0.7742, contrastive loss = 1.3012, lr = 7.04807685411396e-06
+average data time = 0.0279s, average running time = 0.7796s
+epoch 113 iter 32996: eval loss = 1.3549,  ccr = 0.7463,  cwr = 0.6277,  ted = 15645.0000,  ned = 3036.5454,  ted/w = 1.1128, 
+Better model found at epoch 113, iter 32996 with accuracy value: 0.6277.
+epoch 114 iter 33288: loss = 2.9048, smooth loss = 3.0048, ce loss = 0.8066, contrastive loss = 1.2915, lr = 5.183074225255083e-06
+average data time = 0.0279s, average running time = 0.7802s
+epoch 114 iter 33288: eval loss = 1.3542,  ccr = 0.7470,  cwr = 0.6290,  ted = 15634.0000,  ned = 3035.4480,  ted/w = 1.1120, 
+Better model found at epoch 114, iter 33288 with accuracy value: 0.6290.
+epoch 115 iter 33580: loss = 3.0412, smooth loss = 3.0060, ce loss = 0.8563, contrastive loss = 1.3286, lr = 3.6027139035234053e-06
+average data time = 0.0279s, average running time = 0.7809s
+epoch 115 iter 33580: eval loss = 1.3597,  ccr = 0.7468,  cwr = 0.6284,  ted = 15668.0000,  ned = 3051.9723,  ted/w = 1.1144, 
+epoch 116 iter 33872: loss = 3.0616, smooth loss = 3.0250, ce loss = 0.8705, contrastive loss = 1.3206, lr = 2.308135241251002e-06
+average data time = 0.0279s, average running time = 0.7814s
+epoch 116 iter 33872: eval loss = 1.3546,  ccr = 0.7469,  cwr = 0.6285,  ted = 15670.0000,  ned = 3046.3642,  ted/w = 1.1146, 
+epoch 117 iter 34164: loss = 2.8009, smooth loss = 2.9821, ce loss = 0.7664, contrastive loss = 1.2681, lr = 1.300271558009043e-06
+average data time = 0.0279s, average running time = 0.7820s
+epoch 117 iter 34164: eval loss = 1.3529,  ccr = 0.7466,  cwr = 0.6285,  ted = 15689.0000,  ned = 3043.9722,  ted/w = 1.1159, 
+epoch 118 iter 34456: loss = 3.2279, smooth loss = 2.9925, ce loss = 0.9345, contrastive loss = 1.3589, lr = 5.79849467736198e-07
+average data time = 0.0279s, average running time = 0.7826s
+epoch 118 iter 34456: eval loss = 1.3538,  ccr = 0.7465,  cwr = 0.6276,  ted = 15657.0000,  ned = 3042.6585,  ted/w = 1.1137, 
+epoch 119 iter 34748: loss = 2.8531, smooth loss = 2.9938, ce loss = 0.7748, contrastive loss = 1.3035, lr = 1.4738835489012343e-07
+average data time = 0.0279s, average running time = 0.7832s
+epoch 119 iter 34748: eval loss = 1.3535,  ccr = 0.7467,  cwr = 0.6287,  ted = 15642.0000,  ned = 3039.0201,  ted/w = 1.1126, 
