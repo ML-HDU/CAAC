@@ -41,10 +41,10 @@ Get the pretrained models from [GoogleDrive](https://drive.google.com/drive/fold
 
  **Model**         | **Scene**     | **Web**       | **log (Scene)** | **log (Web)** | **SLPR**      | **SLPR-P**    | **log (SLPR)** | **log (SLPR-P)** 
 :-----------------:|:-------------:|:-------------:|:---------------:|:-------------:|:-------------:|:-------------:|:--------------:|:----------------:
- ResNet-45-CAAC    | 65.11 / 0.815 | 63.40 / 0.801 |                 |               | 92.85 / 0.977 | 86.60 / 0.945 |                |                  
- ResNet-45-no-CAAC | 64.07 / 0.809 | 62.86 / 0.799 |                 |               | 92.85 / 0.976 | 88.50 / 0.954 |                |                  
- Swin-S-CAAC       | 74.91 / 0.88. | 64.74 / 0.813 |                 |               |       -       |       -       |                |                  
- Swin-S-no-CAAC    | 72.93 / 0.873 | 62.64 / 0.800 |                 |               |       -       |       -       |                |                  
+ ResNet-45-CAAC    | 65.11 / 0.815 | 63.40 / 0.801 | [Link](./logs/training/ResNet-45-Scene-CAAC.txt)     | [Link](./logs/training/ResNet-45-Web-CAAC.txt)              | 92.85 / 0.977 | 86.60 / 0.945 | [Link](./logs/training/ResNet-45-SLPR-CAAC.txt)               | [Link](./logs/training/ResNet-45-SLPR-P-CAAC.txt)                 
+ ResNet-45-no-CAAC | 64.07 / 0.809 | 62.86 / 0.799 | [Link](./logs/training/ResNet-45-Scene-no-CAAC.txt)  | [Link](./logs/training/ResNet-45-Web-no-CAAC.txt)              | 92.85 / 0.976 | 88.50 / 0.954 | [Link](./logs/training/ResNet-45-SLPR-P-no-CAAC.txt)               | [Link](./logs/training/ResNet-45-SLPR-P-no-CAAC.txt)                 
+ Swin-S-CAAC       | 74.91 / 0.88. | 64.74 / 0.813 | [Link](./logs/training/Swin-S-Scene-CAAC.txt)        | [Link](./logs/training/Swin-S-Web-CAAC.txt)              |       -       |       -       |       -        |      -            
+ Swin-S-no-CAAC    | 72.93 / 0.873 | 62.64 / 0.800 | [Link](./logs/training/Swin-S-Scene-no-CAAC.txt)     | [Link](./logs/training/Swin-S-Web-no-CAAC.txt)              |       -       |       -       |     -          |    -              
 
 
 ## Acknowledgements
