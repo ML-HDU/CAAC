@@ -46,6 +46,6 @@ Additional flags:
 ## Acknowledgements
 
 This implementation is based on the repository [ABINet](https://github.com/FangShancheng/ABINet), [SupContrast](https://github.com/HobbitLong/SupContrast), [FudanVI
-/benchmarking-chinese-text-recognition](https://github.com/FudanVI/benchmarking-chinese-text-recognition).
+/benchmarking-chinese-text-recognition](https://github.com/FudanVI/benchmarking-chinese-text-recognition), [WordArt](https://github.com/xdxie/WordArt).
 
 
