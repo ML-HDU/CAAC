@@ -1,7 +1,7 @@
 global:
-  name: train-CCAC
+  name: train-CAAC
   phase: train
-  workdir: AAA_workdir_FuDan/
+  workdir: workdir
   seed: 42
   contrastive: True
   projection_type: 'projection_free'    # wordArt   projection_free    SimCLR   BiLSTM
@@ -13,29 +13,17 @@ dataset:
   charset_path: data/benchmark_ch_7934.txt
 
   train: {
-    roots: ['/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/recognition_datasets/Chinese_Scene_Dataset_FuDan/web/web_train'],
+    roots: [''],
     batch_size: 1
   }
 
   validation: {
-    # The actually test dataset. We put the validation dataset path to the 'test'.
-    roots: ['/student0/Tnak/Text_Recognition/all_Dataset/Chinese_Scene_Dataset_FuDan/scene/scene_test'],
+    roots: [''],
     batch_size: 384
   }
 
-                                                        # bg_confusion; blur; oblique_or_curved; occlusion; vertical_text
   test: {
-#     roots: ['/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/recognition_datasets/Chinese_Scene_Dataset_FuDan/hard_cases/blur'],
-    roots: ['/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/recognition_datasets/Chinese_Scene_Dataset_FuDan/scene/scene_test/'],
-#    roots: ['/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/recognition_datasets/Chinese_Scene_Dataset_FuDan/web/web_test/'],
-#    roots: [ '/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/recognition_datasets/Chinese_Scene_Dataset_FuDan/document/document_test' ],
-#    roots: ['/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/recognition_datasets/Chinese_Scene_Dataset_FuDan/scene/scene_val'],
-#    roots: ['/media/ml/DATA/Various_Datasets/SLPR_recognition/test/test_LMDB'],
-#    roots: ['/media/ml/DATA/Various_Datasets/SLPR_recognition/rectangle_test/test_LMDB_rectangle'],
-
-#     roots: ['/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/recognition_datasets/English_recognition_benchmark/evaluation/SVTP'],
-#     roots: ['/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/WordArt_Dataset/WordArt/wordArt_test_LMDB'],
-#                                                                            IIIT5k_3000, SVT, SVTP, CUTE80, IC15_1811, IC13_857
+    roots: [''],
     batch_size: 256
   }
   image_only: True
@@ -81,12 +69,7 @@ optimizer:
 
 model:
   name: "Modules.model.Model"
-#  checkpoint: '/home/ml/Desktop/CCAC_paper/checkpoint/model_zoo/Scene_CNN_with_CAAC.pth'
-  checkpoint: '/home/ml/Desktop/CCAC_paper/checkpoint/model_zoo/Scene_Swin_with_CAAC.pth'
-#  checkpoint: '/home/ml/Desktop/CCAC_paper/checkpoint/model_zoo/Scene_CNN_with_CAAC_projection_MLP_with_LN.pth'
-#  checkpoint: '/home/ml/Desktop/CCAC_paper/checkpoint/model_zoo/Scene_CNN_with_CAAC_projection_MLP_without_LN.pth'
-#  checkpoint: '/home/ml/Desktop/CCAC_paper/checkpoint/model_zoo/Scene_CNN_with_CAAC_projection_BiLSTM.pth'
-#  checkpoint: '/home/ml/Desktop/CCAC_paper/checkpoint/model_zoo/Scene_CNN_sub_word_level_SeqCLR_split_attn_vecs.pth'
+  checkpoint: ''
   backbone: 'swin'
   strict: True
   d_model: 512
