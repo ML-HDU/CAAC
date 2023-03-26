@@ -61,4 +61,5 @@ Please click the hyperlinks to see the detailed experimental results, following 
 This implementation is based on the repository [ABINet](https://github.com/FangShancheng/ABINet), [SupContrast](https://github.com/HobbitLong/SupContrast), [FudanVI
 /benchmarking-chinese-text-recognition](https://github.com/FudanVI/benchmarking-chinese-text-recognition), [WordArt](https://github.com/xdxie/WordArt).
 
-
+## License
+Follow the [ABINet](https://github.com/FangShancheng/ABINet), this project is only free for academic research purposes, licensed under the 2-clause BSD License - see the LICENSE file for details.
