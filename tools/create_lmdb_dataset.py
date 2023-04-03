@@ -86,8 +86,4 @@ def createDataset(inputPath, gtFile, outputPath, checkValid=True):
 
 
 if __name__ == '__main__':
-    # fire.Fire(createDataset)
-    createDataset(inputPath='/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/WordArt_Dataset/WordArt/',
-                  gtFile='/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/WordArt_Dataset/WordArt/test_label.txt',
-                  outputPath='/media/ml/DATA/Various_Datasets/Scene_Text_Recognition/WordArt_Dataset/WordArt/wordArt_test_LMDB',
-                  checkValid=True)
+    fire.Fire(createDataset)
