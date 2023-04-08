@@ -56,9 +56,29 @@ BODY {
 </center>
 <h2></h2>
 	
-<center><img src="imgs/SLPR_iamges_1.jpg" width="97%"></center>
-<h2 align="center" margin-top="20px">Abstract</h2>
-<div style="font-size:14px"><p align="justify">Crowd localization, predicting head positions, is a more practical and high-level task than simply counting. Existing methods employ pseudo-bounding boxes or pre-designed localization maps, relying on complex post-processing to obtain the head positions. In this paper, we propose an elegant, end-to-end Crowd Localization TRansformer named CLTR that solves the task in the regression-based paradigm. The proposed method views the crowd localization as a direct set prediction problem, taking extracted features and trainable embeddings as input of the transformer-decoder. To reduce the ambiguous points and generate more reasonable matching results, we introduce a KMO-based Hungarian matcher, which adopts the nearby context as the auxiliary matching cost. Extensive experiments conducted on five datasets in various data settings show the effectiveness of our method. In particular, the proposed method achieves the best localization performance on the NWPU-Crowd, UCF-QNRF, and ShanghaiTech Part A datasets.</p></div>
+<center><img src="imgs/SLPR_images_1.jpg" width="97%"></center>
+<h2 align="center" margin-top="18px">Text Images of SLPR-R (Up) and SLPR-P (Down) datasets</h2>
+
+<center><img src="imgs/SLPR_images_2.jpg" width="97%"></center>
+<h2 align="center" margin-top="18px">Text Images of SLPR-R Benchmark</h2>
+	
+<center><img src="imgs/SLPR_images_3.jpg" width="97%"></center>
+<h2 align="center" margin-top="18px">Text Images of SLPR-P Benchmark</h2>
+	
+<h2 align="center" margin-top="20px">Introduction</h2>
+<div style="font-size:14px"><p align="justify">
+	Ship license plate recognition (SLPR) plays important role in intelligent waterway management, but few attention has been paid to SLPR 
+	in scene text recognition (STR) community. We collected ship license plate text images and classified them as SLPR-R and SLPR-P according 
+	to the sampling strategy. Specifically，SLPR-R contains 6,922 text samples, of which 5,131 for training, 1,791 for testing. 
+	The SLPR-R dataset covers Chinese and digital sequence images, all of which are ship license of river boat. 
+	Noting that some practical factors lead to duplication of text content between partial images.
+	The only difference from SLPR-R is that the text images in SLPR-P almost all have perspective, tilt, rotation and other distortions.
+	The corpus distribution of SLPR texts shows obvious imbalance characteristics, the following figure illustrates the top-20 corpus and 
+	their distribution in number. Extremely uneven distribution will seriously affect the generalization of the recognition model.
+</p></div>
+	
+<center><img src="imgs/corpus_distribution.jpg" width="97%"></center>
+<h2 align="center" margin-top="18px">The top-20 corpus and their distribution in number</h2>
 
 <!-- <table border="0" cellspacing="0" cellpadding="10" width="100%">
 	<tr>
